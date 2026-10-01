@@ -1,0 +1,8 @@
+services:
+  php:
+    image: php:8.4-apache
+    container_name: lab3
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/var/www/html
